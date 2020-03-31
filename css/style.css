@@ -33,11 +33,9 @@ main{
 
 footer{
     width: 1200px;
-    height: 63px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 20px 0px;
     margin: 0 auto;
+    border-top: 1px solid #e5e5e5;
 }
 
 nav{
@@ -99,6 +97,7 @@ figure, figcaption{
     margin: 0;
 }
 
+
 main>section{
     padding-top: 90px;
     width: 1200px;
@@ -123,9 +122,13 @@ p{
     flex-direction: column;
     align-items: center;
     margin-bottom: 64px;
+    font-family: var(--mont);
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
 }
 
-.title-regular::after{
+.section-title::after{
     content: "";
     display: block;
     margin: 35px auto 0 auto;
@@ -141,13 +144,11 @@ p{
     margin: 0;
     margin-bottom: 16px;
     padding: 0;
+    text-transform: none;
 }
 
 .title-regular{
-    font-family: var(--mont);
-    font-weight: 700;
-    font-size: 30px;
-    text-transform: uppercase;
+    
     margin: 0;
     padding: 0;
 }
@@ -181,7 +182,7 @@ p{
 
 /* *********ICONS********** */
 
-.services-list-item figure::before{
+.services-list-item h3::before{
     content: '';
     float: left;
     display: block;
@@ -192,27 +193,27 @@ p{
     background-position: top center;
 }
  
-.services-list-item:nth-child(1) figure::before{
+.services-list-item:nth-child(1) h3::before{
     background-image: url('../img/icons/ALARM.svg');
 }
 
-.services-list-item:nth-child(2) figure::before{
+.services-list-item:nth-child(2) h3::before{
     background-image: url('../img/icons/LINE_GRAPH.svg');
 }
 
-.services-list-item:nth-child(3) figure::before{
+.services-list-item:nth-child(3) h3::before{
     background-image: url('../img/icons/COMPUTER.svg');
 }
 
-.services-list-item:nth-child(4) figure::before{
+.services-list-item:nth-child(4) h3::before{
     background-image: url('../img/icons/BOOK.svg');
 }
 
-.services-list-item:nth-child(5) figure::before{
+.services-list-item:nth-child(5) h3::before{
     background-image: url('../img/icons/HOME.svg');
 }
 
-.services-list-item:nth-child(6) figure::before{
+.services-list-item:nth-child(6) h3::before{
     background-image: url('../img/icons/IMAGE.svg');
 }
 
@@ -230,7 +231,7 @@ p{
     color: #999999;
 }
 
-.team-article{
+.team{
     margin-bottom: 80px;
 }
 
@@ -348,6 +349,12 @@ p{
 
 /* *********************************** */
 
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .copyright-info{
     font-family: var(--mont);
     font-weight: 400;
@@ -381,7 +388,7 @@ input[type="email"]{
     border: 1px solid #e7e7e7;
 }
 
-input[type="submit"]{
+button{
     width: 150px;
     height: 40px;
     background-color: #95e1d3;
@@ -395,11 +402,6 @@ input[type="submit"]{
     cursor: pointer;
 }
   
-
-
-
-
-
 
 
 .visually-hidden:not(:focus):not(:active),
