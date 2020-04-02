@@ -193,27 +193,27 @@ p{
     background-position: top center;
 }
  
-.services-list-item:nth-child(1) h3::before{
+.photography-service h3::before{
     background-image: url('../img/icons/ALARM.svg');
 }
 
-.services-list-item:nth-child(2) h3::before{
+.web-design-service h3::before{
     background-image: url('../img/icons/LINE_GRAPH.svg');
 }
 
-.services-list-item:nth-child(3) h3::before{
+.creativity-service h3::before{
     background-image: url('../img/icons/COMPUTER.svg');
 }
 
-.services-list-item:nth-child(4) h3::before{
+.seo-service h3::before{
     background-image: url('../img/icons/BOOK.svg');
 }
 
-.services-list-item:nth-child(5) h3::before{
+.css-html-service h3::before{
     background-image: url('../img/icons/HOME.svg');
 }
 
-.services-list-item:nth-child(6) h3::before{
+.digital-service h3::before{
     background-image: url('../img/icons/IMAGE.svg');
 }
 
