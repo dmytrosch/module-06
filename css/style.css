@@ -7,13 +7,15 @@
     box-sizing: border-box;
 }
 
-.wrapper{
-    display: flex;
+.container{
+    /* display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; */
+    margin: 0 auto;
+    width: 1200px;
 }
 
-.wrapper>header{
+.container>header{
     height: 90px;
     font-family: var(--mont);
 }
@@ -32,16 +34,13 @@ main{
 }
 
 footer{
-    width: 1200px;
     padding: 20px 0px;
-    margin: 0 auto;
     border-top: 1px solid #e5e5e5;
 }
 
 nav{
     margin: 0 auto;
     padding: 0;
-    width: 1200px;
     height: 65px;
     display: flex;
     align-items: flex-end;
