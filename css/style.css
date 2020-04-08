@@ -97,8 +97,7 @@ figure, figcaption{
     margin: 0;
 }
 
-
-main>section{
+.section{
     padding-top: 90px;
     width: 1200px;
     margin: 0 auto;
@@ -121,11 +120,14 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 64px;
     font-family: var(--mont);
     font-weight: 700;
     font-size: 30px;
     text-transform: uppercase;
+}
+
+.section-header{
+    margin-bottom: 64px;
 }
 
 .section-title::after{
@@ -219,9 +221,6 @@ p{
 
 /* ********************************* */
 
-.section-title-team{
-    margin-bottom: 44px;
-}
 
 .service-item-description, .article-text{
     font-family: var(--roboto);
